@@ -34,7 +34,6 @@
 
 ![image](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/c66efc22-fdd5-4e32-991d-18a636a2c8af)
 
-![image](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/e8487926-8e10-4b1c-9995-96c9a6ec5b15)
 
 
 
