@@ -181,7 +181,7 @@
    ```
 
 
-#Create CA
+# Create CA
  Go to fabric-samples folder by using below command.
  ```bash
   cd fabric-samples
@@ -190,7 +190,7 @@
  ``` bash
  cd test-network
  ```
- Run below command to start your test-network and create CA container for each organization ( one for orderer, one for org1 peer and one for org2 peer)
+ Run below command to start test-network and create CA container for each organization ( one for orderer, one for org1 peer and one for org2 peer)
  ``` bash
  sudo ./network.sh up -ca
  ```
@@ -217,21 +217,40 @@
 
 ![image](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/598c3fda-e647-4c86-aaa4-81c53e78ecbc)
 
-
+# Create Couchdb
+ Go to fabric-samples folder by using below command.
+ ``` bash 
+ cd fabric-samples
+ ```
+ Go to test-network folder by using below command.
+ ``` bash
+ cd test-network
+ ```
+ Run below command to start the network and create couchDB containers as well.
+ ``` bash
+ sudo ./network.sh up -s couchdb
+ ```
 ![image](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/77cbd3a1-fd70-4cc8-94d1-052dc67675fd)
 
 
 ![image](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/66fb0d6e-40f0-4251-97dc-5b753bfe3f9c)
 
+
 ![image](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/9df332b5-1581-48fc-be39-9a606985df7a)
 
-
+ Create new channel by using below command.
+ ``` bash
+ sudo ./network.sh createChannel -c testchannel1
+ ```
 ![image](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/aad1e4e4-4e77-4f04-9bee-9a169bfb92b9)
 
 
 ![image](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/1ce58d02-400b-42e7-9603-a27c73570bc3)
 
-
+To stop the network, you need to run below command.
+``` bash
+   sudo ./network.sh down
+```
 ![image](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/8657d090-9d09-424e-b1dd-92a2d5d71b1d)
 
 
