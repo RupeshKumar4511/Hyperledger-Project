@@ -1,7 +1,59 @@
-# Hyperledger-Project
+# Hyperleder Fabric Prerequisites Setup
+
+1) Create a new sudo user
+   
+   add new user “fabric”
+   
+   ``` bash
+   sudo adduser fabric
+   ```
+   
+   Add the user “fabric” to the Sudo groups
+   
+   sudo usermod -aG sudo fabric
+   
+   Login to “fabric” user
+   
+   su fabric
+
+   Test the sudo access
+
+   sudo ls
+
+
+2) Install cURL
+   sudo apt-get update
+   sudo apt-get install curl
+
+3) Install Docker CE (Community Edition )
+
+   First download and then install it using below commands.
+ 
+   https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.3~ce~3-0~ubuntu_amd64.deb
+ 
+   sudo dpkg -i docker-ce_18.06.3~ce~3-0~ubuntu_amd64.deb
+
+4) Install Docker Compose
+
+  Run below commands to setup Docker compose.
+ 
+   sudo apt-get install python-pip
+ 
+   pip --version
+ 
+   sudo pip install docker-compose
+
+
+
+  To use docker commands it requires root privileges. Instead of using sudo for all the docker commands, add the user to docker group
+  
+  sudo usermod -aG docker fabric
+  
+   
 ![Screenshot from 2024-04-29 16-12-17](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/4bbd2273-c717-4d69-866f-b999fce32bc9)
 
-
+ Logout using exit command and log in again. Check the groups' user is part of, using id -nG command.
+ 
 ![Screenshot from 2024-04-29 16-24-48](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/6aad260b-29a2-42e1-991f-14ed83e836cf)
 
 
