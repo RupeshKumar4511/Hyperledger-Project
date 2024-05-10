@@ -72,6 +72,11 @@
 
    
 ![Screenshot from 2024-04-29 16-37-36](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/cd29a0f9-ad8d-40d0-b58e-44c424d1de05)
+
+  check go version
+  
+![Screenshot from 2024-04-29 16-31-03](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/9ac11685-78cd-4b57-b2e5-b48208548325)
+
 6)  Nodejs and npm
   Download the installation script using curl
   
@@ -88,13 +93,16 @@
   With nodejs, npm also get installed. Check their version
   node -v
   npm -v
-  
-  
-![Screenshot from 2024-04-29 16-31-03](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/9ac11685-78cd-4b57-b2e5-b48208548325)
 
+  
+7) install  python
+   
+   sudo apt-get install python
 
+   
 ![Screenshot from 2024-04-29 16-38-43](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/c16b26ea-6f61-422b-b422-3ac8bd137437)
 
+# Hyperledger instllation
 
 ![Screenshot from 2024-05-06 15-57-10](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/c0363df4-ef5a-4fa1-9037-8ffd57551594)
 
