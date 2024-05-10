@@ -9,33 +9,37 @@
    ```
    
    Add the user “fabric” to the Sudo groups
-   
+   ``` bash
    sudo usermod -aG sudo fabric
+   ```
    
    Login to “fabric” user
-   
+   ``` bash
    su fabric
-
+   ```
+   
    Test the sudo access
-
+  ``` bash
    sudo ls
+  ```
 
-
-2) Install cURL
+3) Install cURL
+   ``` bash
    sudo apt-get update
    sudo apt-get install curl
+   ```
+   
+5) Install Docker CE (Community Edition )
 
-3) Install Docker CE (Community Edition )
-
-   First download and then install it using below commands.
- 
+   First download and then install it using below commands. <br>
+   ```bash
    https://download.docker.com/linux/ubuntu/dists/xenial/pool/stable/amd64/docker-ce_18.06.3~ce~3-0~ubuntu_amd64.deb
  
    sudo dpkg -i docker-ce_18.06.3~ce~3-0~ubuntu_amd64.deb
-
-4) Install Docker Compose
-
-  Run below commands to setup Docker compose.
+   ```
+6) Install Docker Compose
+   ```bash
+   Run below commands to setup Docker compose.
  
    sudo apt-get install python-pip
  
@@ -43,67 +47,80 @@
  
    sudo pip install docker-compose
 
+  ```
 
-
-  To use docker commands it requires root privileges. Instead of using sudo for all the docker commands, add the user to docker group
-  
-  sudo usermod -aG docker fabric
-  
+   To use docker commands it requires root privileges. Instead of using sudo for all the docker commands, add the user to docker group
+   ``` bash
+   sudo usermod -aG docker fabric
+  ```
    
 ![Screenshot from 2024-04-29 16-12-17](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/4bbd2273-c717-4d69-866f-b999fce32bc9)
 
- Logout using exit command and log in again. Check the groups' user is part of, using id -nG command.
+   Logout using exit command and log in again. Check the groups' user is part of, using id -nG command.
+
+   Test the Installation
  
+   Pull the hello-world image from Docker Hub and run a container:
+   ``` bash
+   docker run hello-world
+  ```
+
 ![Screenshot from 2024-04-29 16-24-48](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/6aad260b-29a2-42e1-991f-14ed83e836cf)
 
 5) Install Golang
+   ``` bash
    Install the golang package
    curl -O https://storage.googleapis.com/golang/go1.11.linux-amd64.tar.gz
 
    Extract the package
    tar xvf go1.11.linux-amd64.tar.gz
 
-
+   ```
 ![Screenshot from 2024-04-29 16-25-22](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/a472e4f7-2b5f-4916-a599-bb54b7b4b8a4)
 
-  Set the GOPATH using command
+   Set the GOPATH using command
+   ``` bash
    export GOPATH=$HOME/go
    export PATH=$PATH:$GOPATH/bin
 
+   ```
    
 ![Screenshot from 2024-04-29 16-37-36](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/cd29a0f9-ad8d-40d0-b58e-44c424d1de05)
 
-  check go version
+   check go version
   
 ![Screenshot from 2024-04-29 16-31-03](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/9ac11685-78cd-4b57-b2e5-b48208548325)
 
 6)  Nodejs and npm
-  Download the installation script using curl
-  
-  curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
-  
-  Run the script under sudo
-  
-  sudo bash nodesource_setup.sh
-  
-  Install the nodejs
-  
-  sudo apt-get install nodejs
-
-  With nodejs, npm also get installed. Check their version
-  node -v
-  npm -v
-
-  
-7) install  python
-   
-   sudo apt-get install python
-
+    Download the installation script using curl
+    ``` bash
+    curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
+    ```
+    Run the script under sudo
+    ``` bash
+    sudo bash nodesource_setup.sh
+    ```
+    Install the nodejs
+    ``` bash
+    sudo apt-get install nodejs
+    ```
+    With nodejs, npm also get installed. Check their version
+    ``` bash
+    node -v
+    npm -v
+    ```
+  8) install  python
+     ``` bash
+        sudo apt-get install python
+     ```
    
 ![Screenshot from 2024-04-29 16-38-43](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/c16b26ea-6f61-422b-b422-3ac8bd137437)
 
-# Hyperledger instllation
-
+# Hyperledger installation
+ Determine the directory where you want to download the fabric samples. Open the directory in terminal and run the below command
+ ``` bash
+ curl -sSL http://bit.ly/2ysbOFE | bash -s -- 2.4.4 1.5.3
+```
 ![Screenshot from 2024-05-06 15-57-10](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/c0363df4-ef5a-4fa1-9037-8ffd57551594)
 
 ![Screenshot from 2024-05-06 15-57-36](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/f49c5f82-ef25-4f4e-9cd5-c633917f0c03)
