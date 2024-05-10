@@ -1,4 +1,4 @@
-# Hyperleder Fabric Prerequisites Setup
+# Hyperledger Fabric Prerequisites Setup
 
 1) Create a new sudo user
    
@@ -56,13 +56,40 @@
  
 ![Screenshot from 2024-04-29 16-24-48](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/6aad260b-29a2-42e1-991f-14ed83e836cf)
 
+5) Install Golang
+   Install the golang package
+   curl -O https://storage.googleapis.com/golang/go1.11.linux-amd64.tar.gz
+
+   Extract the package
+   tar xvf go1.11.linux-amd64.tar.gz
+
 
 ![Screenshot from 2024-04-29 16-25-22](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/a472e4f7-2b5f-4916-a599-bb54b7b4b8a4)
 
+  Set the GOPATH using command
+   export GOPATH=$HOME/go
+   export PATH=$PATH:$GOPATH/bin
 
+   
 ![Screenshot from 2024-04-29 16-37-36](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/cd29a0f9-ad8d-40d0-b58e-44c424d1de05)
+6)  Nodejs and npm
+  Download the installation script using curl
+  
+  curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
+  
+  Run the script under sudo
+  
+  sudo bash nodesource_setup.sh
+  
+  Install the nodejs
+  
+  sudo apt-get install nodejs
 
-
+  With nodejs, npm also get installed. Check their version
+  node -v
+  npm -v
+  
+  
 ![Screenshot from 2024-04-29 16-31-03](https://github.com/RupeshKumar4511/Hyperledger-Project/assets/149661006/9ac11685-78cd-4b57-b2e5-b48208548325)
 
 
